@@ -23,7 +23,7 @@ namespace DesafioProjetoHospedagem.Models
             }
             else
             {
-              Console.WriteLine("Capacidade insuficiente");
+              throw new ArgumentException("Número de hóspedes excede a capacidade da suíte.");
             }
                 // TODO: Retornar uma exception caso a capacidade seja menor que o número de hóspedes recebido
                 // *IMPLEMENTE AQUI*
